@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css\about.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <title>Reaction to sound</title>
+</head>
+
+<body>
+    <div class="pageloader">
+        <div class="loaderWrapper">
+            <img id="sukurysLoader" src="img\shell.gif">
+        </div>
+        <div class="loaderFooter">Loading...</div>
+    </div>
+
+    <div class="maingrid">
+        <div class="logoContainer">
+            <img id="logo" src="img\logo.png" class="sliding">
+        </div>
+        <div class="fractalContainer">
+            <img id="sukurys" src="img\shell.gif" class="sliding">
+        </div>
+        <div class="navContainer">
+            <div class="nav">
+                <a class="menuElement hoverItems" href="index.html">/əˈbaʊt/ </a>
+                <a class="menuElement hoverItems" href="about.html">/saʊnd/</a>
+                <a class="menuElement hoverItems" href="reaction.html">/rɪˈakʃ(ə)n/</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="soundWave trigeredSlideIn">
+        <P class="trigeredSlideIn">
+
+            <div class="soundWave1 trigeredSlideIn">
+                <h1 class="heading">Sound is a wave of vibration</h1>
+                <p>That travels through three states of matter: solid, liquid, gas.</p>
+            </div>
+
+            <div class="soundWave2 trigeredSlideIn">IT IS SOMETHING THAT CAN BE HEARD</div>
+        </P>
+    </div>
+
+    <div class="aboutWrapper">
+        <div class="aboutContainer">
+            <div class="text1 trigeredSlideIn dottedBorder">
+                <div class="number1 trigeredSlideIn">01</div>
+                It starts with mechanical movement;</div>
+            <div class="text2 trigeredSlideIn dottedBorder">
+                <div class="number2 trigeredSlideIn">02</div>
+                A movement, which causes some vibration in the molecules; </div>
+            <div class="text3 trigeredSlideIn dottedBorder">
+                <div class="number3 trigeredSlideIn">03</div>
+                Which in turn causes other molecules around them to vibrate;</div>
+            <div class="text4 trigeredSlideIn dottedBorder">
+                <div class="number4 trigeredSlideIn">04</div>
+                And these vibrations from one molecule to other hepls sound to travel.</div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div class="salonsInformation">
+            <h1 class="informationHeading">Information on Salons</h1>
+            <P class="informationParagraph">
+                <a class="hoverItems" href="www.ourwaves.com/reactiontosound">Reaction to Sound</a>
+                </br>
+                <a class="hoverItems" href="www.ourwaves.com/musicandculture">Music and Culture</a>
+                </br>
+                <a class="hoverItems" href="www.ourwaves.com/moodandemotion">Mood and Emotion</a>
+                </br>
+                <a class="hoverItems" href="www.ourwaves.com/musicthroughtime">Music Through Time</a>
+                </br>
+        </div>
+
+        <div class="locationAndContact">
+            <h1 class="locationAndContactHeading">Location and Contact</h1>
+            <P class="locationAndContactParagraph">Herbert Art Gallery and Museum, Jordan Well,</br>
+                Coventry CV1 5QP</br>
+                <a class="hoverItems" href="www.ourwaves.com/moodandemotion">info@ourwaves.com</a>
+                </br>
+                <a class="hoverItems"  href="www.ourwaves.com/musicthroughtime">www.tickets.com/ourwavessalons</a>
+                </br>
+            </P>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-square fa-3x"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fab fa-twitter-square fa-3x"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+        </div>
+
+        <div class="ourWavesLogo">
+            <img id="logo" src="img\ourwaves.png">
+            <div class="privacyPolicy">
+                Privacy Policy</br>
+                Terms and Conditions</br>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="http://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        $(window).on("load", function () { //Loading function
+            $(".pageloader").fadeOut(300); //Fades out loader when page loaded
+        });
+
+        const triggerPosition = ".soundWave"; //Change to trigger loading from somewhere else
+        const onWhat = ".trigeredSlideIn"; //On which elements animation will be added
+
+
+
+        $(document).ready(function () {
+            document.documentElement.style.overflowX = 'hidden'; //Disable horizontal overflow
+            if ($(triggerPosition).css('visibility', 'hidden') && $(triggerPosition).offset().top > 700) { //IF NOT YET LOADED...
+                $(".aboutContainer").animate({
+                    backgroundColor: "black"
+                }, 5000, function () { // Changes background colour (change number)
+                    // Animation complete.
+                });
+                console.log("1 HEEEY");
+                $(window).scroll(function () {
+                    let hT = $(triggerPosition).offset().top, //Calculate x where ".video1" appears
+                        hH = $(triggerPosition).outerHeight(),
+                        wH = $(window).height(),
+                        wS = $(this).scrollTop();
+                    //console.log("IF", wS + 100, " > ", hT + hH - wH);
+                    if (wS > (hT + hH - wH)) { //IF SCROLED TO x where ".video1" appears
+                        addAnimations(onWhat);
+                    }
+                });
+            }
+
+            if ($(triggerPosition).css('visibility', 'hidden') && $(document).scrollTop() > 200) { //If the player have scrolled, still load
+                console.log("1 HEEEY");
+                // $(".aboutContainer").css("background-color", "white");
+                addAnimations(onWhat);
+            }
+        });
+
+        function addAnimations(element) {
+
+            $.each($(element), function (i, el) {
+                setTimeout(function () { //Iteratively add timers to objects so they appear one by one
+                    $(el).css('visibility', 'visible'); //VISIBILITY: Hidden on each video by default, so have to remove
+                    $(el).addClass("sliding"); //ADD ANIMATION!
+                }, 10 + (i * 100)); //Call itself and recalculate new time
+            });
+        }
+    </script>
+
+</body>
+
+</html>
